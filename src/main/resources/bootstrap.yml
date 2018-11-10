@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eurekaserver
+  boot:
+   admin:
+     context-path: /admin
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 10
+    preferIpAddress: true
+management:
+  security:
+    enabled: false
+server:
+  port: 8761
