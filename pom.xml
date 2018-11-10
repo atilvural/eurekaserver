@@ -68,6 +68,13 @@
             <artifactId>spring-jdbc</artifactId>
             <version>3.0.3.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.spotify/docker-maven-plugin -->
+        <dependency>
+            <groupId>com.spotify</groupId>
+            <artifactId>docker-maven-plugin</artifactId>
+            <version>0.4.13</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -88,7 +95,7 @@
             </plugin>
             <plugin>
                 <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
+                <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
                     <imageName>eurekaserver</imageName>
